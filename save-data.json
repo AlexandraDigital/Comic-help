@@ -1,0 +1,57 @@
+{
+  "profile": {
+    "name": "Alexandra",
+    "skillLevel": "some-experience",
+    "timeMinutes": 150,
+    "genre": "Superhero"
+  },
+  "characters": [
+    {
+      "id": "char_blitz_001",
+      "name": "Blitz Reset",
+      "faction": "Hero Side",
+      "role": "protagonist",
+      "powers": "Stolen powers extracted from O-verse beings via custom gun + amplification machine. Known abilities: fire spiral, mind reading, cloaked heat signature, + many more accumulated over years.",
+      "motivations": "Family of heroes died stopping O-verse attack. Something broke — decided ALL villains must die. Genuinely believes he's saving the world.",
+      "relationships": "Enemy of Hunthesk's team. Body-swapped with Hunthesk during battle.",
+      "description": "Brilliant, cold, methodical, haunted. Cocky in battle. Can't distinguish justice from revenge — sees villain = death sentence, no exceptions.",
+      "visualNotes": "Dark tactical gear, extraction gun as signature weapon. GREEN energy color during the swap."
+    },
+    {
+      "id": "char_hunthesk_002",
+      "name": "Hunthesk",
+      "faction": "Villain Side",
+      "role": "antagonist",
+      "powers": "TBD — strong enough to grab Blitz and survive his fire spiral twice. Leader-class O-verse being.",
+      "motivations": "Protect his kind at all costs. Investigating the disappearances of O-verse beings. Wants justice/revenge for the drained and killed.",
+      "relationships": "Leader of the investigation team. Commands Wave Blade and ArrowShock. Body-swapped with Blitz.",
+      "description": "Protective, righteous, fierce. Blind loyalty — protects ALL O-verse beings regardless of what they've done.",
+      "visualNotes": "ORANGE energy color. O-verse being design."
+    },
+    {
+      "id": "char_waveblade_003",
+      "name": "Wave Blade",
+      "faction": "Villain Side",
+      "role": "team-member",
+      "powers": "Creates a shield that disrupts wave frequencies. Can destabilize energy-based attacks and barriers.",
+      "motivations": "Loyal to Hunthesk and the O-verse protection mission. Likely feels guilty about accidentally causing the body swap.",
+      "relationships": "Four-in-Command on Hunthesk's team. Works alongside ArrowShock.",
+      "description": "Female. Rank: Four-in-Command (4th in hierarchy). Her power's critical drawback: sometimes overcharges, causing frequencies to MIX instead of disrupt — this caused the body swap.",
+      "visualNotes": "Wavy energy lines, fluid design. Shield shimmers/ripples like disturbed water."
+    },
+    {
+      "id": "char_arrowshock_004",
+      "name": "ArrowShock",
+      "faction": "Villain Side",
+      "role": "team-member",
+      "powers": "Energy arrows that can pierce defenses and create vulnerability in targets.",
+      "motivations": "Part of Hunthesk's protection/investigation team.",
+      "relationships": "On Hunthesk's team. His arrow to Blitz's heart made Blitz vulnerable to Wave Blade's accidental frequency merge.",
+      "description": "O-verse being. His vulnerability strike was one of three factors that caused the body swap.",
+      "visualNotes": "Sharp, angular design. Lightning motifs."
+    }
+  ],
+  "plotPoints": [],
+  "panels": [],
+  "synopsis": "A grief-stricken human who stole powers from interdimensional beings to exterminate all villains is forced to see through his enemy's eyes — literally — when a freak body-swap traps him in the body of the very beings he's been hunting."
+}
