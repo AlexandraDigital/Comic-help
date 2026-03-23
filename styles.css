@@ -21,8 +21,8 @@
 
 body {
   margin: 0;
-  background: var(--bg);
-  color: var(--text);
+  background: var(--bg) !important;
+  color: var(--text) !important;
   font-family: system-ui, sans-serif;
   font-size: 15px;
   line-height: 1.5;
