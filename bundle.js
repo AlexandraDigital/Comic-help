@@ -23009,7 +23009,7 @@
 
   // home/apps/comic-help/app.tsx
   var import_jsx_runtime7 = __toESM(require_jsx_runtime());
-  var SAVE_PATH = "/agent/home/apps/comic-help/save-data.json";
+  var SAVE_KEY = "comic-help-save-data";
   var App = () => {
     const [screen, setScreen] = (0, import_react8.useState)("setup");
     const [profile, setProfile] = (0, import_react8.useState)(null);
@@ -23020,9 +23020,10 @@
     const [activeTab, setActiveTab] = (0, import_react8.useState)("story");
     const [saveStatus, setSaveStatus] = (0, import_react8.useState)("idle");
     (0, import_react8.useEffect)(() => {
-      window.tasklet.readFileFromDisk(SAVE_PATH).then((data) => {
-        try {
-          const saved = JSON.parse(data);
+      try {
+        const raw = localStorage.getItem(SAVE_KEY);
+        if (raw) {
+          const saved = JSON.parse(raw);
           if (saved.profile) {
             setProfile(saved.profile);
             setCharacters((saved.characters || []).map((c, i) => ({
@@ -23041,17 +23042,16 @@
             setSynopsis(saved.synopsis || "");
             setScreen("dashboard");
           }
-        } catch {
         }
-      }).catch(() => {
-      });
+      } catch {
+      }
     }, []);
     const save = (0, import_react8.useCallback)(async () => {
       if (!profile) return;
       setSaveStatus("saving");
       const data = { profile, characters, plotPoints, panels, synopsis };
       try {
-        await window.tasklet.writeFileToDisk(SAVE_PATH, JSON.stringify(data, null, 2));
+        localStorage.setItem(SAVE_KEY, JSON.stringify(data));
         setSaveStatus("saved");
         setTimeout(() => setSaveStatus("idle"), 1500);
       } catch {
